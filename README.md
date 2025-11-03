@@ -43,7 +43,7 @@ Objective: Identify the most popular songs on Spotify with massive listener reac
 ```sql
 
 SELECT TRACK FROM SPOTIFY 
-WHERE STREAM > 1000000000`
+WHERE STREAM > 1000000000
 
 ```
 
