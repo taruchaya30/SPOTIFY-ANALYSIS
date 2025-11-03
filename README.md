@@ -41,9 +41,11 @@ Objective: Identify the most popular songs on Spotify with massive listener reac
 
 
 ```sql
+
 SELECT TRACK FROM SPOTIFY 
 WHERE STREAM > 1000000000`
-``
+
+```
 
 
 Explanation:
@@ -53,8 +55,10 @@ Q2 List all albums along with their respective artists
 Objective: Display the relationship between artists and the albums they’ve released.
 
 ```sql
+
 SELECT DISTINCT ALBUM , ARTIST FROM SPOTIFY
 ORDER BY 1
+
 ```
  
 Explanation:
@@ -65,8 +69,10 @@ Q3 Get the total number of comments for tracks where licensed = TRUE
 Objective: Find how much engagement (comments) licensed tracks receive.
 
 ```sql
+
 SELECT SUM(COMMENTS) AS TOTAL_COMMENTS FROM SPOTIFY
 WHERE LICENSED = 'TRUE'
+
 ```
 
 Explanation:
