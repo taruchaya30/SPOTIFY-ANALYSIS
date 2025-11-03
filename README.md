@@ -1,4 +1,4 @@
-                                                                              🎵 Spotify Data Analysis — SQL Project
+                                                      🎵 Spotify Data Analysis — SQL Project
 
 📌 Project Overview
 This project performs data analysis on Spotify tracks using SQL.
@@ -42,23 +42,29 @@ This query filters tracks whose total streams exceed 1,000,000,000, giving a lis
 
 Q2 List all albums along with their respective artists
 Objective: Display the relationship between artists and the albums they’ve released.
+
 `SELECT DISTINCT ALBUM , ARTIST FROM SPOTIFY
  ORDER BY 1`
+ 
 Explanation:
 The DISTINCT keyword removes duplicate rows and ensures each album–artist pair appears only once.
 
 
 Q3 Get the total number of comments for tracks where licensed = TRUE
 Objective: Find how much engagement (comments) licensed tracks receive.
+
 `SELECT SUM(COMMENTS) AS TOTAL_COMMENTS FROM SPOTIFY
 WHERE LICENSED = 'TRUE'`
+
 Explanation:
 This sums up all comments on tracks that are officially licensed, giving total audience engagement for legal content.
 
 Q4 all tracks that belong to the album type single
 Objective: List all songs released as singles.
+
 `SELECT TRACK FROM SPOTIFY 
 WHERE ALBUM_TYPE ILIKE '%SINGLE%'`
+
 Explanation:
 The ILIKE operator (case-insensitive LIKE) ensures even if “Single” appears in different cases, it is included.
 
