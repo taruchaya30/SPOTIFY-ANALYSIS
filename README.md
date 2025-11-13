@@ -249,6 +249,9 @@ Language: SQL
 Database: PostgreSQL 
 Tools: pgAdmin
 
+# Dataset Source:
+This project uses the Spotify Tracks Dataset from Kaggle, containing track-level audio features, stream and counts. The dataset was used solely for educational, analytical, and non-commercial purposes.
+
 # How to Run
 Create the table using the provided CREATE TABLE statement.
 Load your dataset into the SPOTIFY table.
