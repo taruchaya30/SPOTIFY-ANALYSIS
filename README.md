@@ -237,7 +237,7 @@ Joins via SubqueriesCommon Table Expressions (CTE): WITH clause
 Window Functions: DENSE_RANK() OVER (PARTITION BY … ORDER BY …)
 Conditional Aggregation: CASE WHEN with COALESCE()
 
-# Sample Insights
+# Insights
 The most streamed tracks cross 1 billion+ streams.
 Artists with multiple high-energy tracks dominate playlists.
 Danceability varies significantly by album type.
